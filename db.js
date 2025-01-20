@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE
+    database: process.env.DB_DATABASE,
 });
 
 // const connection = mysql.createConnection({
@@ -34,6 +34,7 @@ connection.connect((err) => {
 
 module.exports = connection;
 
+// //
 // const select_query = 'SELECT * FROM users'
 // connection.query(select_query,(err,result) => {
 //     if (err) {
@@ -83,6 +84,7 @@ module.exports = connection;
 //         console.log(result);
 //     }
 // });
+
 
 
 
